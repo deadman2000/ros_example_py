@@ -4,8 +4,8 @@ import rospy
 from sensor_msgs.msg import Image
 
 
-def img_callback(img: Image):
-    rospy.loginfo('%d x %d    size: %zu', img.width, img.height, len(img.data))
+def img_callback(img):
+    rospy.loginfo('%d x %d    size: %d', img.width, img.height, len(img.data))
 
 
 def example():
